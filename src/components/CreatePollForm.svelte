@@ -1,11 +1,42 @@
 
 
 <script>
-
+    import Button from "../shared/Button.svelte";
     let fields = {question: '', answerA: '', answerB: ''}
-    console.log(fields)
+    let errors = {question: '', answerA: '', answerB: ''}
+    let valid = false;
 
     const submitHandler = () =>{
+        valid = true;
+        if (fields.question.trim().length < 5) {
+            valid = false;
+            errors.question = "Questin should be at least 5 chars long"
+        }
+        else{
+            errors.question = "";
+        }
+
+
+        //answer a
+
+        if (fields.answerA.trim().length < 1) {
+            valid = false;
+            errors.answerA = "Answer should be at least 1 chars long"
+        }
+        else{
+            errors.answerA = "";
+        }
+
+
+        //answer b
+
+        if (fields.answerB.trim().length < 1) {
+            valid = false;
+            errors.answerB = "Answer should be at least 1 chars long"
+        }
+        else{
+            errors.answerB = "";
+        }
 
     }
 </script>
@@ -26,7 +57,7 @@
         <label for="answer-b">Answer B:</label>
         <input type="text" id="answer-b" bind:value={fields.answerB}>
     </div>
-    <button>Answer</button>
+    <Button type="primary"> Add Poll</Button>
 </form>
 
 
