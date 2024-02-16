@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 2b7a1c0 (second)
+>>>>>>> 2af8578 (Initial commit)
 # Logs
 logs
 *.log
@@ -128,3 +135,15 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+/node_modules/
+/public/build/
+
+.DS_Store
+>>>>>>> 15b1c60 (commit)
+>>>>>>> 2b7a1c0 (second)
+>>>>>>> 2af8578 (Initial commit)
